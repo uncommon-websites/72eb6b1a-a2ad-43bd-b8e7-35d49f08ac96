@@ -1,144 +1,203 @@
 <script lang="ts">
-	// No script needed for static recreation
+	// Company - AI-assisted design studio
 </script>
 
-<div class="min-h-screen bg-white text-black font-sans px-6 py-8 md:px-10 md:py-10 selection:bg-gray-200">
-	<!-- Header -->
-	<header class="grid grid-cols-2 md:grid-cols-12 gap-y-4 text-[15px] leading-tight mb-32 md:mb-48 font-normal">
-		<div class="col-span-1 md:col-span-3">
-			Christopher Doyle & Co.
+<div class="min-h-screen bg-white text-[#374151] font-sans px-6 py-6 md:px-10 md:py-8 lg:px-12 lg:py-10 selection:bg-gray-100 selection:text-black">
+	<!-- Navigation Header -->
+	<header class="grid grid-cols-2 md:grid-cols-5 gap-4 text-[15px] leading-none mb-32 md:mb-48 lg:mb-64">
+		<!-- Column 1 -->
+		<div class="col-span-1 font-normal tracking-tight">Company</div>
+		
+		<!-- Column 2 -->
+		<div class="hidden md:block col-span-1 font-normal tracking-tight text-[#9CA3AF]">
+			<a href="#projects" class="hover:text-[#374151] transition-colors">Sprints</a>
 		</div>
 		
-		<div class="col-span-1 md:col-span-2 md:col-start-4">
-			<a href="#" class="hover:opacity-60 transition-opacity">Projects</a>
+		<!-- Column 3 -->
+		<div class="hidden md:block col-span-1 font-normal tracking-tight text-[#9CA3AF]">
+			<a href="#how-it-works" class="hover:text-[#374151] transition-colors">Workflow</a>
 		</div>
 		
-		<div class="col-span-1 md:col-span-2 md:col-start-6">
-			<a href="#" class="hover:opacity-60 transition-opacity">Profile</a>
+		<!-- Column 4 -->
+		<div class="hidden md:block col-span-1 font-normal tracking-tight text-[#9CA3AF]">
+			<a href="#services" class="hover:text-[#374151] transition-colors">Deliverables</a>
 		</div>
 		
-		<div class="col-span-1 md:col-span-2 md:col-start-10 text-right md:text-left">
-			<button class="hover:opacity-60 transition-opacity cursor-pointer">Lights Off</button>
-		</div>
-		
-		<div class="col-span-1 md:col-span-1 md:col-start-12 text-right">
-			<a href="#" class="hover:opacity-60 transition-opacity">Contact</a>
+		<!-- Column 5 -->
+		<div class="col-span-1 text-right font-normal tracking-tight" style="color: oklch(0.623 0.214 259.815)">
+			<a href="mailto:hello@company.com" class="hover:opacity-80 transition-opacity">Contact</a>
 		</div>
 	</header>
 
-	<!-- Hero -->
-	<section class="grid grid-cols-1 md:grid-cols-12 mb-32 md:mb-48">
-		<div class="col-span-1 md:col-span-9 md:col-start-4 text-[28px] md:text-[32px] leading-[1.15] tracking-tight font-normal">
-			<p>
-				We are a team of independent, globally-recognised, idea-led creatives specialising in brand identity, creative direction, and digital design. We collaborate with leading creatives in a variety of fields to help transform companies, products, and brands.
-			</p>
+	<!-- Main Hero Text -->
+	<main class="mb-32 md:mb-40 lg:mb-52">
+		<h1 class="text-2xl md:text-3xl lg:text-[2.6rem] leading-[1.15] tracking-tight font-normal max-w-[90%] md:max-w-[82%]">
+			Fast, on-brand design. Without the hiring. AI-assisted creative production for SaaS teams that need assets yesterday.
+		</h1>
+	</main>
+
+	<!-- Project Section 1 (Hero Image) -->
+	<section id="projects" class="w-full mb-32 md:mb-48">
+		<!-- Project Info Row -->
+		<div class="grid grid-cols-1 md:grid-cols-5 gap-4 mb-2 md:mb-1 items-start">
+			<!-- Spacer Col 1 -->
+			<div class="hidden md:block col-span-1"></div>
+			
+			<!-- Project Title Col 2 -->
+			<div class="col-span-1 text-[15px] font-normal tracking-tight text-[#374151]">
+				Design Sprints
+			</div>
+			
+			<!-- Project Description Col 3 (Spans slightly into 4 visually) -->
+			<div class="col-span-1 md:col-span-2 text-[15px] text-[#9CA3AF] font-normal tracking-tight leading-snug max-w-lg">
+				Rapid iteration and predictable turnarounds. Get launch-ready visuals in days, not weeks, with our specialized AI-assisted workflows.
+			</div>
+			
+			<!-- Spacer Col 5 -->
+			<div class="hidden md:block col-span-1"></div>
+		</div>
+
+		<!-- Project Image Row -->
+		<div class="grid grid-cols-1 md:grid-cols-5 gap-4 mt-2">
+			<!-- Spacer Col 1 -->
+			<div class="hidden md:block col-span-1"></div>
+			
+			<!-- Image Container Col 2-5 -->
+			<div class="col-span-1 md:col-span-4">
+				<div class="w-full aspect-[16/10] md:aspect-[2.1/1] overflow-hidden bg-gray-100">
+					<img src="/generated/image-a-high-end-minimalist-design-studio-work-1769020720561-0.webp" alt="AI-Assisted Design Studio Workspace" class="w-full h-full object-cover grayscale brightness-90">
+				</div>
+			</div>
 		</div>
 	</section>
 
-	<!-- Projects -->
-	<section class="flex flex-col gap-24 md:gap-32 mb-32">
-		<!-- Project 1 -->
-		<article class="grid grid-cols-1 md:grid-cols-12">
-			<div class="col-span-1 md:col-span-9 md:col-start-4 grid grid-cols-1 md:grid-cols-12 mb-3 text-[15px] gap-y-1 items-baseline">
-				<div class="col-span-1 md:col-span-4 font-normal">
-					Tsu Lange Yor
-				</div>
-				<div class="col-span-1 md:col-span-8 text-gray-400 font-normal">
-					Brand identity, art direction, motion, and digital design for elevated homewares and fragrances.
-				</div>
+	<!-- How it Works Section -->
+	<section id="how-it-works" class="mb-32 md:mb-48">
+		<div class="grid grid-cols-1 md:grid-cols-5 gap-4 mb-16">
+			<div class="col-span-1 md:col-start-2">
+				<h2 class="text-[15px] font-normal tracking-tight uppercase text-[#9CA3AF]">How it works</h2>
 			</div>
-			<div class="col-span-1 md:col-span-9 md:col-start-4 w-full aspect-[16/10] bg-gray-200 overflow-hidden relative group cursor-pointer">
-				<img 
-					src="https://images.unsplash.com/photo-1615887023516-9b6c500c9c74?q=80&w=2500&auto=format&fit=crop&sat=-100" 
-					alt="Tsu Lange Yor Campaign" 
-					class="w-full h-full object-cover grayscale brightness-90 transition-transform duration-700 group-hover:scale-105"
-				/>
-				<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-					<span class="text-white font-bold text-6xl md:text-8xl tracking-widest opacity-90">TSU LANGE YOR</span>
-				</div>
+			<div class="col-span-1 md:col-span-3 text-[1.5rem] md:text-[2rem] leading-tight tracking-tight">
+				We handle the AI workflows so you just get the files. No prompts, no guesswork—just polished, production-grade outputs.
 			</div>
-		</article>
+		</div>
 
-		<!-- Project 2 -->
-		<article class="grid grid-cols-1 md:grid-cols-12">
-			<div class="col-span-1 md:col-span-9 md:col-start-4 grid grid-cols-1 md:grid-cols-12 mb-3 text-[15px] gap-y-1 items-baseline">
-				<div class="col-span-1 md:col-span-4 font-normal">
-					New Aim
+		<div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+			<div class="hidden md:block col-span-1"></div>
+			<div class="col-span-1 md:col-span-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+				<div class="flex flex-col gap-4">
+					<span class="text-[15px] font-normal text-[#9CA3AF]">01. Sprint</span>
+					<p class="text-[15px] leading-relaxed">Book a design sprint to get assets fast. No long-term commitment, just high-impact creative work delivered at speed.</p>
 				</div>
-				<div class="col-span-1 md:col-span-8 text-gray-400 font-normal">
-					Brand identity, motion, and illustration for Australia's largest and fastest-growing ecommerce company.
+				<div class="flex flex-col gap-4">
+					<span class="text-[15px] font-normal text-[#9CA3AF]">02. Refine</span>
+					<p class="text-[15px] leading-relaxed">Our senior designers refine AI-generated concepts into pixel-perfect assets that align perfectly with your brand system.</p>
 				</div>
-			</div>
-			<div class="col-span-1 md:col-span-9 md:col-start-4 w-full aspect-[16/10] bg-green-800 overflow-hidden relative group cursor-pointer">
-				<img 
-					src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=2500&auto=format&fit=crop" 
-					alt="New Aim Hoodie" 
-					class="w-full h-full object-cover opacity-60 mix-blend-multiply bg-green-700 transition-transform duration-700 group-hover:scale-105"
-				/>
-				<div class="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
-					<span class="text-[#4ade80] font-bold text-[10rem] md:text-[14rem] -rotate-12 translate-y-10 tracking-tighter leading-none">newaim</span>
+				<div class="flex flex-col gap-4">
+					<span class="text-[15px] font-normal text-[#9CA3AF]">03. Scale</span>
+					<p class="text-[15px] leading-relaxed">Transition to a recurring retainer for predictable design capacity. We become an extension of your product team.</p>
 				</div>
 			</div>
-		</article>
+		</div>
+	</section>
 
-		<!-- Project 3 -->
-		<article class="grid grid-cols-1 md:grid-cols-12">
-			<div class="col-span-1 md:col-span-9 md:col-start-4 grid grid-cols-1 md:grid-cols-12 mb-3 text-[15px] gap-y-1 items-baseline">
-				<div class="col-span-1 md:col-span-4 font-normal">
-					AirOxy
-				</div>
-				<div class="col-span-1 md:col-span-8 text-gray-400 font-normal">
-					Brand identity, motion, and collateral for a new innovator in streamlined ecommerce solutions.
+	<!-- Feature Image Section -->
+	<section class="w-full mb-32 md:mb-48">
+		<div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+			<div class="col-span-1 md:col-span-3">
+				<div class="w-full aspect-[16/10] overflow-hidden bg-gray-100">
+					<img src="/generated/image-close-up-of-a-designers-hands-using-a-hi-1769020723268-1.webp" alt="Human-Led Quality Control" class="w-full h-full object-cover grayscale brightness-95">
 				</div>
 			</div>
-			<div class="col-span-1 md:col-span-9 md:col-start-4 w-full aspect-[16/10] bg-[#2a6b8f] overflow-hidden relative group cursor-pointer">
-				<img 
-					src="https://images.unsplash.com/photo-1597200381847-30ec200eeb9a?q=80&w=2500&auto=format&fit=crop" 
-					alt="AirOxy Sky" 
-					class="w-full h-full object-cover opacity-90 transition-transform duration-700 group-hover:scale-105"
-				/>
-				<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-					<div class="flex items-center gap-4 text-white">
-						<div class="w-10 h-10 md:w-14 md:h-14 border-[5px] border-white rounded-t-full rounded-bl-full rotate-45"></div>
-						<span class="font-bold text-5xl md:text-7xl tracking-tighter">AIROXY<sup class="text-2xl md:text-3xl top-[-1.5em]">TM</sup></span>
+			<div class="col-span-1 md:col-span-2 flex flex-col justify-end pb-4">
+				<p class="text-[15px] text-[#9CA3AF] max-w-xs">Not just AI. Actual humans. Every output is reviewed by experienced designers who understand B2B SaaS and brand fluency.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Services / Use Cases Section -->
+	<section id="services" class="mb-32 md:mb-48">
+		<div class="grid grid-cols-1 md:grid-cols-5 gap-4 mb-24">
+			<div class="col-span-1 md:col-start-2">
+				<h2 class="text-[15px] font-normal tracking-tight uppercase text-[#9CA3AF]">Deliverables</h2>
+			</div>
+			<div class="col-span-1 md:col-span-3">
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-y-12 gap-x-8">
+					<div>
+						<h3 class="text-[15px] font-normal mb-4">Marketing Visuals</h3>
+						<p class="text-[15px] text-[#9CA3AF] leading-relaxed">High-impact ads, email templates, and social carousels that drive growth and engagement.</p>
+					</div>
+					<div>
+						<h3 class="text-[15px] font-normal mb-4">Product Mockups</h3>
+						<p class="text-[15px] text-[#9CA3AF] leading-relaxed">Rapid UI concepts and interface explorations to visualize new features before they hit development.</p>
+					</div>
+					<div>
+						<h3 class="text-[15px] font-normal mb-4">Brand Extensions</h3>
+						<p class="text-[15px] text-[#9CA3AF] leading-relaxed">Scalable campaign assets and visual systems that maintain consistency across every touchpoint.</p>
+					</div>
+					<div>
+						<h3 class="text-[15px] font-normal mb-4">Iconography & Illustration</h3>
+						<p class="text-[15px] text-[#9CA3AF] leading-relaxed">Custom-built visual elements that give your product a unique, professional edge.</p>
 					</div>
 				</div>
 			</div>
-		</article>
+		</div>
 
-		<div class="grid grid-cols-1 md:grid-cols-12 text-[15px]">
-			<div class="col-span-1 md:col-span-2 md:col-start-4">
-				<a href="#" class="hover:opacity-60 transition-opacity">More projects</a>
+		<div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+			<div class="hidden md:block col-span-1"></div>
+			<div class="col-span-1 md:col-span-4">
+				<div class="w-full aspect-[21/9] overflow-hidden bg-gray-100">
+					<img src="/generated/image-a-clean-organized-grid-of-various-high-q-1769020725843-2.webp" alt="Launch-Ready Marketing Assets" class="w-full h-full object-cover grayscale brightness-90">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- CTA Section -->
+	<section class="mb-32 md:mb-48 border-t border-gray-100 pt-32">
+		<div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+			<div class="col-span-1 md:col-start-2 md:col-span-3">
+				<h2 class="text-2xl md:text-3xl lg:text-[2.6rem] leading-[1.15] tracking-tight font-normal mb-12">
+					Ready to make something sharp? Book a sprint to see what we can do in 72 hours.
+				</h2>
+				<div class="flex flex-col md:flex-row gap-8 items-start">
+					<a href="mailto:hello@company.com" class="text-[15px] font-normal border-b border-[#374151] pb-1 hover:opacity-60 transition-opacity">Book a sprint</a>
+					<a href="mailto:hello@company.com" class="text-[15px] font-normal border-b border-[#374151] pb-1 hover:opacity-60 transition-opacity">Schedule a call</a>
+				</div>
 			</div>
 		</div>
 	</section>
 
 	<!-- Footer -->
-	<footer class="border-t border-gray-200 pt-6 md:pt-8 text-[13px] leading-relaxed text-gray-400 font-normal">
-		<div class="grid grid-cols-1 md:grid-cols-12 gap-y-8">
-			<div class="col-span-1 md:col-span-3">
-				&copy;Christopher Doyle & Co.
+	<footer class="border-t border-gray-100 pt-12 text-[13px] leading-relaxed text-[#9CA3AF] font-normal">
+		<div class="grid grid-cols-1 md:grid-cols-5 gap-y-12 gap-x-4">
+			<div class="col-span-1">
+				<span class="text-[#374151]">Company</span>
+				<p class="mt-4">AI-assisted design studio for fast-moving SaaS teams.</p>
 			</div>
 
-			<div class="col-span-1 md:col-span-2 md:col-start-4 flex flex-col gap-0.5">
-				<a href="#" class="hover:text-black transition-colors">Instagram</a>
-				<a href="#" class="hover:text-black transition-colors">Twitter</a>
-				<a href="#" class="hover:text-black transition-colors">LinkedIn</a>
+			<div class="col-span-1 md:col-start-2 flex flex-col gap-1">
+				<a href="https://linkedin.com" class="hover:text-[#374151] transition-colors">LinkedIn</a>
+				<a href="https://x.com" class="hover:text-[#374151] transition-colors">X (Twitter)</a>
+				<a href="https://instagram.com" class="hover:text-[#374151] transition-colors">Instagram</a>
 			</div>
 
-			<div class="col-span-1 md:col-span-3 md:col-start-6">
-				<p>Suite 405/46 Kippax St.</p>
-				<p>Surry Hills</p>
-				<p>Sydney 2010</p>
+			<div class="col-span-1 md:col-start-3">
+				<p>Remote First</p>
+				<p>Global Studio</p>
+				<p class="mt-4">hello@company.com</p>
+			</div>
+
+			<div class="col-span-1 md:col-start-5 text-right">
+				<p>&copy; {new Date().getFullYear()} Company</p>
+				<p>All rights reserved.</p>
 			</div>
 		</div>
 
-		<div class="grid grid-cols-1 md:grid-cols-12 mt-12 md:mt-24">
-			<div class="col-span-1 md:col-span-6 md:col-start-4 text-gray-400">
-				<p>
-					We acknowledge Aboriginal & Torres Strait Islander peoples as the traditional custodians of country throughout Australia. Our studio sits on the lands of the Gadigal people of the Eora Nation and we pay our respects to their elders past, present, and emerging. Christopher Doyle & Co. is a proudly and intentionally inclusive company and supporter of the LGBTIQ+ community.
-				</p>
-			</div>
+		<div class="mt-32 pb-12">
+			<p class="max-w-2xl">
+				We acknowledge the intersection of technology and creativity. Our studio operates at the frontier of generative AI and human expertise, committed to delivering ethical, high-quality creative work for digital-first brands. We handle the complexity of model selection and asset refinement so you can focus on building.
+			</p>
 		</div>
 	</footer>
 </div>
